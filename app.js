@@ -91,9 +91,9 @@ function removeCellonclick() {
 // resets borders to default
 function resetBorders() {
     for (let i = 0; i < playerPieces.length; i++) {
-        playerPieces[i].style.border = "1px solid white";
+        playerPieces[i].style.border = "2px solid white";
     }
-    resetSelectedPieceProperties();
+    // resetSelectedPieceProperties();
     getSelectedPiece();
 }
 
@@ -222,7 +222,7 @@ function checkPieceConditions() {
 function givePieceBorder() {
     if (selectedPiece.spaceSeven || selectedPiece.spaceNine || selectedPiece.spaceFourteen || selectedPiece.spaceEighteen
     || selectedPiece.spaceMinusSeven || selectedPiece.spaceMinusNine || selectedPiece.spaceMinusFourteen || selectedPiece.spaceMinusEighteen) {
-        document.getElementById(selectedPiece.id).style.border = "1px solid green";
+        document.getElementById(selectedPiece.id).style.border = "2px solid green";
         giveCellsClick();
     } else {
         return;
@@ -257,7 +257,9 @@ function giveCellsClick() {
     }
 }
 
-/* v when the cell is clicked v */
+// ======================
+// After piece is clicked
+// ======================
 
 // makes the move that was clicked
 function makeMove(number) {

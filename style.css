@@ -32,7 +32,7 @@ td {
     width: 80%;
     height: 80%;
     background-color: rgb(180, 29, 29);
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
@@ -40,7 +40,7 @@ td {
     width: 80%;
     height: 80%;
     background-color: black;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 }
 
